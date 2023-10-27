@@ -12,63 +12,31 @@
     <h1>Calculadora Simples</h1>
 
     <script>
-        
+
         let operando1;
         let operando2;
-        
-        let operando3;
-        let operando4;
-
-        let operando5;
-        let operando6;
-        
-        let operando7;
-        let operando8;
-        
-        let operando9;
-        let operando10;
-
 
         operando1 = prompt("Digite o primeiro número");
-        operando2 = prompt("Digite o primeiro número");
-        
-        operando3 = prompt("Digite o primeiro número");
-        operando4 = prompt("Digite o primeiro número");
-        
-        operando5 = prompt("Digite o primeiro número");
-        operando6 = prompt("Digite o primeiro número");
-        
-        operando7 = prompt("Digite o primeiro número");
-        operando8 = prompt("Digite o primeiro número");
-        
-        operando9 = prompt("Digite o primeiro número");
-        operando10 = prompt("Digite o primeiro número");
-        
+        operando2 = prompt("Digite o segundo número");
+
         let conversao1 = parseInt(operando1);
         let conversao2 = parseInt(operando2);
-        
-        let conversao3 = parseInt(operando3);
-        let conversao4 = parseInt(operando4);
-        
-        let conversao5 = parseInt(operando5);
-        let conversao6 = parseInt(operando6);
-        
-        let conversao7 = parseInt(operando7);
-        let conversao8 = parseInt(operando8);
-        
-        let conversao9 = parseInt(operando9);
-        let conversao10 = parseInt(operando10);
 
         let soma = conversao1 + conversao2;
-        let subtracao = conversao3 - conversao4
-        let multiplicacao = conversao5 * conversao6
-        let divisao = conversao7 / conversao8
-        
-        
+        let subtracao = conversao1 - conversao2
+        let multiplicacao = conversao1 * conversao2
+        let divisao = conversao1 / conversao2
+        let restodivisao = conversao1 % conversao2
+        let exponenciação = conversao1 ** conversao2
+
         document.write(`Adição: ${operando1} + ${operando2} = ${soma}`);
-        document.write(`<br>Subtração: ${operando3} - ${operando4} = ${subtracao}`);
-        document.write(`<br>Multiplicação: ${operando5} x ${operando6} = ${multiplicacao}`);
-        document.write(`<br>Divisão: ${operando7} / ${operando8} = ${divisao}`);
+        document.write(`<br>Subtração: ${operando1} - ${operando2} = ${subtracao}`);
+        document.write(`<br>Multiplicação: ${operando1} x ${operando2} = ${multiplicacao}`);
+        document.write(`<br>Divisão: ${operando1} / ${operando2} = ${divisao}`);
+        document.write(`<br>Resto da Divisão: ${operando1} % ${operando2} = ${restodivisao}`);
+        document.write(`<br>Exponenciação: ${operando1} ** ${operando2} = ${exponenciação}`);
+        document.write(`<br>Unário de Incremento: ${operando1} após incrementar = ${++operando1}`);
+        document.write(`<br>Unário de Decremento: ${operando1} após decrementar = ${--operando1}`);
     </script>
 </body>
 
