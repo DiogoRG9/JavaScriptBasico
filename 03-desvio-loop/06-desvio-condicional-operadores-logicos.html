@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diogo Roque Gaiato</title>
+</head>
+
+<body>
+    <script>
+        let texto = prompt("Digite Se o Aluno Foi Aprovado(true) ou Reprovado(false)");
+        let aprovado  = texto == ("true")
+        let frequencia = parseInt(prompt("Informe o Valor da Frequência do Aluno"));
+        if (aprovado && frequencia >= 75) {
+            document.write("Aprovado por nota e frequência.");
+        }
+
+        else if (!aprovado && frequencia >= 75) {
+            document.write("Aprovado por nota e Reprovado por frequência.");
+        }
+
+        else {
+            document.write("Reprovado por nota e frequência.");
+        }
+    </script>
+</body>
+
+</html>
