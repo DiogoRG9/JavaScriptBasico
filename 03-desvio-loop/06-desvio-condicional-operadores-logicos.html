@@ -10,7 +10,7 @@
 
 <body>
     <script>
-        let texto = prompt("Digite Se o Aluno Foi Aprovado(true) ou Reprovado(false)");
+        let texto = prompt("Digite Se o Aluno Foi Aprovado(true) ou Reprovado(false)").toLowerCase();
         let aprovado  = texto == ("true")
         let frequencia = parseInt(prompt("Informe o Valor da Frequência do Aluno"));
         if (aprovado && frequencia >= 75) {

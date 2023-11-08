@@ -10,11 +10,20 @@
 
 <body>
     <script>
-        let numero = parseInt(prompt("Qual o Valor Você Deseja Saber a Tabuada ?"))
+        let inicio = parseInt(prompt("Digite o Inicio da sequência."));
+        let fim = parseInt(prompt("Digite o Fim da sequência"));
+        let resultado
+        if (inicio < fim) {
+            for (let i = inicio; i <= fim; i++) {
+                document.write("Número: " + i + "<br>");
+            }
+        }
 
-        for (let i = 1; i < 10; i++) {
-            let resultado = numero * i;
-            document.write(numero + " x " + i + " = " + resultado + "<br>");
+
+        else {
+            for (let i = inicio; i >= fim; i--) {
+                document.write("Numero: " + i + "<br>");
+            }
         }
 
     </script>
