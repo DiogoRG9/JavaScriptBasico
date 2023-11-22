@@ -1,7 +1,8 @@
 document.getElementById("validarButton").
 addEventListener("click", function(){
     // alert("CPF Válido!!!");
-    const CPF = document.getElementById("cpfinput").value;
+    let CPF = document.getElementById("cpfinput").value;
+    CPF = CPF.replace(/[^0-9]/g, '');
     if(validaCPF(CPF)){
         document.getElementById("resultado").textContent = "CPF Válido"
     } 
@@ -61,3 +62,7 @@ function validaCPF (vrcpf) {
 
     // return vrcpf.length === 11 & !isNaN(vrcpf);
 }
+
+document.addEventListener('DOMContentLoaded', function(){
+    VMasker(document.getElementById('cpfinput')).maskPattern('999.999.999-99');
+});
